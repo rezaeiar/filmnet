@@ -25,3 +25,16 @@
     src: url('/fonts/KalamehWeb/KalamehWeb-Thin.woff2') format('woff2');
     font-weight: 100;
 }
+
+.swiper-pagination-bullet {
+    width: 4px !important;
+    height: 4px !important;
+    color: #000;
+    background: rgba(255, 255, 255, 0.74) !important;
+    cursor: pointer;
+  }
+  
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #fff !important;
+}
