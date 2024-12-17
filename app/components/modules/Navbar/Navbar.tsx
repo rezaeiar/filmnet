@@ -47,7 +47,7 @@ export const Navbar = () => {
                 <div className="container">
                     <div className="flex items-center justify-between gap-10">
                         <div className="flex items-center gap-2 lg:gap-10 shrink-0 py-3 lg:py-2">
-                            <div className="block lg:hidden" onClick={() => setIsShowMobileMenu(prev => !prev)}>
+                            <div className="block lg:hidden cursor-pointer" onClick={() => setIsShowMobileMenu(prev => !prev)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-7 text-white">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                 </svg>
@@ -55,7 +55,7 @@ export const Navbar = () => {
                             <Link href={'/'}>
                                 <Image
                                     src={'/images/logo.png'}
-                                    alt=""
+                                    alt="Logo"
                                     width={28}
                                     height={28}
                                 />

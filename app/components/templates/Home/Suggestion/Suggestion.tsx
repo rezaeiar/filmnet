@@ -48,7 +48,7 @@ const Suggestion = () => {
                                         <div className="hidden lg:flex items-center gap-2">
                                             {
                                                 item.lebels.map(label => (
-                                                    <div className="text-xs bg-slate-700 rounded-full text-white py-1 px-2">
+                                                    <div className="text-xs bg-slate-700 rounded-full text-white py-1 px-2" key={label}>
                                                         {label}
                                                     </div>
                                                 ))
@@ -60,7 +60,7 @@ const Suggestion = () => {
                                         className='w-full'
                                         height={400}
                                         width={880}
-                                        alt=""
+                                        alt="Suggec=stion"
                                     />
                                 </Link>
                             ))

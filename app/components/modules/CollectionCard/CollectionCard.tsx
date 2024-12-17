@@ -12,7 +12,7 @@ export const CollectionCard = ({ image, title }: CollectionSlideType) => {
                     className=' hover:scale-150 transition-all duration-[2000ms] w-full'
                     height={300}
                     width={1200}
-                    alt=""
+                    alt="Collection Card"
                 />
             </div>
             <h2 className='text-white mt-2'>

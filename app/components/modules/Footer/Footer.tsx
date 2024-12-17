@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                             <Link href={'/'}>
                                 <Image
                                     src={'/images/logo.png'}
-                                    alt=""
+                                    alt="Logo"
                                     width={40}
                                     height={40}
                                 />
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                             <Link href={'/'}>
                                 <Image
                                     src={'/images/neshane_sabt.svg'}
-                                    alt=""
+                                    alt="Namad"
                                     width={40}
                                     height={40}
                                 />
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
                             <Link href={'/'}>
                                 <Image
                                     src={'/images/enamad.png'}
-                                    alt=""
+                                    alt="Namad"
                                     width={40}
                                     height={40}
                                 />

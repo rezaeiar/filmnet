@@ -6,6 +6,23 @@ import { Navigation, Pagination, EffectFade } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 const Header = () => {
+    const sliderSlides = [
+        {
+            id: 1,
+            title: 'جان سخت',
+            images: '/images/covers/67304f3ee0d4456f97bb0f00f2702962.jpg'
+        },
+        {
+            id: 2,
+            title: 'گردن زنی',
+            images: '/images/covers/1034a104c33c4b8dafb9a8300737e1a7.jpg'
+        },
+        {
+            id: 3,
+            title: 'روز شغال',
+            images: '/images/covers/e3921eb42c65405daed0d4b1090f7491.jpg'
+        },
+    ]
     return (
         <div className='relative'>
             <Swiper
@@ -41,14 +58,14 @@ const Header = () => {
                     </div>
                 </div>
                 {
-                    [1, 1, 23, 6].map(item => (
-                        <SwiperSlide className='!w-full z-50 relative' key={1}>
-                            <div className="relative flex justify-center items-end h-[600px] bg-cover" style={{ background: `url(${'/images/covers/67304f3ee0d4456f97bb0f00f2702962.jpg'})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+                    sliderSlides.map(item => (
+                        <SwiperSlide className='!w-full z-50 relative' key={item.id}>
+                            <div className="relative flex justify-center items-end h-[600px] bg-cover" style={{ background: `url(${item.images})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                                 <div className="container absolute flex justify-between">
                                     <div className=" w-full h-full flex flex-col gap-4 z-40 pb-20">
                                         <div className="flex flex-col lg:flex-row lg:items-center gap-3">
                                             <h2 className='text-white text-xl lg:text-2xl font-bold'>
-                                                خجالت نکش 2
+                                                {item.title}
                                             </h2>
                                             <div className="bg-gray-200 py-1 px-2 rounded-full text-black w-fit -order-1 lg:order-1">
                                                 سینما آنلاین

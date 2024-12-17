@@ -54,7 +54,7 @@ const MovieCard = ({ image, inNew, isComming, label, title, genre, Production, i
                     className='w-48 lg:w-36'
                     height={200}
                     width={180}
-                    alt=""
+                    alt="Movie Image"
                 />
             </div>
             <h2 className='text-white text-sm mt-1 line-clamp-1'>

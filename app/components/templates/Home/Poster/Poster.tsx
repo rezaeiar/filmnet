@@ -9,7 +9,7 @@ const Poster = () => {
                 className='w-full'
                 height={800}
                 width={2080}
-                alt=""
+                alt="Poster"
             />
         </div>
     )
